@@ -12,7 +12,8 @@ addpath(genpath('PUBLIC'))
 
 
 % load video
-Im = importdata('dataset/news_cif.mat');
+Im(:, :, :, 1:75) = importdata('dataset/news_cif_s1.mat');
+Im(:, :, :, 76:150) = importdata('dataset/news_cif_s2.mat');
 Im = single(Im);
 
 
