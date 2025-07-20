@@ -26,7 +26,7 @@ tim = toc;
 
 
 ind = 90;
-psnr_slice = psnr(uint8(Jm(:, :, 90)), uint8(Im(:, :, 90)));
+psnr_slice = psnr(uint8(Jm(:, :, ind)), uint8(Im(:, :, ind)));
 fprintf('Gaussian noise level %d, psnr of denoised %dth slice = %.4f \n', stdGau, ind, psnr_slice)
 
 
